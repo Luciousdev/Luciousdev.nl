@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script language="javascript">
+        function pasuser(form) {
+            if (form.id.value == "webdav") {
+                if (form.pass.value == "lucyfreedownload") {
+                    location.href = "./pages/main.html"
+                } else {
+                    alert("Wrong Password")
+                }
+            } else {
+                alert("Wrong Username")
+            }
+        }
+    </script>
+    <h1>Login</h1>
+    <hr>
+    <form name="login">
+        Username:<br>
+        <input name="id" size="6" type="text"><br><br> Password:<br>
+        <input name="pass" size="6" type="password"><br>
+        <input value="Login" onclick="pasuser(this.form)" type="button">
+    </form>
+</body>
+
+</html>
