@@ -14,7 +14,7 @@ if (promise !== undefined) {
         // Autoplay staat uit, het mute de video en speelt het opnieuw.
         video.muted = true;
         video.play();
-        alert("Het geluid van de video speelt niet af door een instelling in uw browser. chrome://settings/content/sound");
+        alert("The sound of the vide cannot play because of a setting in your browser. chrome://settings/content/sound");
         console.error("Video could not play due to a set setting in the users browser.");
     });
 }

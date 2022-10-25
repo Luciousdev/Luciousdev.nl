@@ -8,17 +8,17 @@ window.onfocus = function() {
 
 
 //FIX het is momenteel meer hoe vaak je zelf op de website bent geweest en niet hoevaak het is bezocht... 
+//Finally hooked up an API to it (25/10/2022)
 
 
-let counterContainer = document.querySelector(".keren_bezocht");
-let visitCount = localStorage.getItem("page_view");
+const countEl = document.getElementById('count');
 
-// Check if page_view entry is present
-if (visitCount) {
-    visitCount = Number(visitCount) + 1;
-    localStorage.setItem("page_view", visitCount);
-} else {
-    visitCount = 1;
-    localStorage.setItem("page_view", 1);
+updateVisitCount();
+
+function updateVisitCount() {
+    fetch('https://api.countapi.xyz/update/luciousdev.nl/website2/?amount=1')
+        .then(res => res.json())
+        .then(res => {
+            countEl.innerHTML = res.value;
+        })
 }
-counterContainer.innerHTML = visitCount;
