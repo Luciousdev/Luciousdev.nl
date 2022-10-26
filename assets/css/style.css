@@ -350,3 +350,19 @@ table.minimalistBlack tfoot td {
 
 
 /* footer */
+
+
+/* scroll animation */
+
+.section {
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+}
+
+.section:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+
+.section.show {
+    transform: translateX(0);
+}
