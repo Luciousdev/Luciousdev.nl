@@ -1,114 +1,350 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Lucy Puyenbroek</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <script src="/assets/js/title.js" defer></script>
-    <script src="/assets/js/volume.js" defer></script>
-    <script defer>
-        // website scaling hopefully?
-        let siteWidth = 1920;
-        let scale = screen.width / siteWidth;
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/video-pic-gif/hackerman.gif">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=' + siteWidth + ', initial-scale=' + scale + '');
-    </script>
+    <meta name="title" content="Lucious.dev">
+    <meta property="og:title" content="Lucious.dev">
+    <meta property="twitter:title" content="Lucious.dev">
+
+    <meta name="description" content="Lucious.dev support/about me website">
+    <meta property="og:description" content="Lucious.dev support/about me website">
+    <meta property="twitter:description" content="Lucious.dev support/about me website">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#F7A8B8" data-react-helmet="true">
+
+    <meta property="twitter:url" content="">
+    <meta property="twitter:card" content="summary">
+    <meta name="viewport" user-scalable="yes">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <script src="./assets/js/scroll-animation.js" defer></script>
+    <script src="./assets/js/title.js" defer></script>
+    <script src="./assets/js/volume.js" defer></script>
 </head>
 
 <body>
-
-
-    <!-- menu and video -->
-
-    <section>
-        <!-- video -->
-
-        <header class="main-header" id="main-header">
-            <canvas id="background" width="1920" height="1080"></canvas>
-            <div class="video">
-                <video id="video" width="100%" height="auto" autoplay>
-                <source src="/assets/videos/rainyboots.mp4" controls="false" loop type="video/mp4">
+    <header class="main-header" id="main-header">
+        <canvas id="main-bg" width="1920" height="1080"></canvas>
+        <div class="video">
+            <video id="video" width="100%" height="auto" autoplay>
+                <source src="./assets/video-pic-gif/rainyboots.mp4" controls="false" loop type="video/mp4" volume="0.1">
             </video>
-            </div>
-
-            <!-- menu -->
-            <div class="main-menu">
-                <a href="./homepage.html" class="a-menu">Lucious.dev</a>
-                <div class="main-menu-sep"></div>
-                <a href="#mijn_profiel" class="a-menu">About Me</a>
-                <a href="#over_mij" class="a-menu">Projects</a>
-                <a href="#motivatie" class="a-menu">(Title)</a>
-                <a href="#overig" class="a-menu">Banned</a>
-                <a href="https://github.com/Luciousdev" class="a-menu" target="blank_">GitHub</a>
-            </div>
-
-            <span class="header-bezocht-div">
-                <h1 class="header-bezocht" id="padding1">
-                    You are the
+        </div>
+        <div class="main-menu">
+            <a href="./index.html" class="a-menu" id="logo">Luciousdev.nl</a>
+            <div class="main-menu-sep"></div>
+            <a href="#section-projects" class="a-menu" id="proj-menu">Projects</a>
+            <a href="#section-aboutme" class="a-menu" id="support-menu">About Me</a>
+            <a href="#section-social" class="a-menu" id="social-menu">Socials</a>
+            <a href="#section-twitch" class="a-menu" id="github-menu">Twitch</a>
+            <a href="https://github.com/Luciousdev" class="a-menu" id="github-menu">GitHub</a>
+        </div>
+        <div class="main-header-center">
+            <h1 class="main-header-heading" id="four">
+                You are the
                 <span id="count">0</span>th visitor
             </h1>
-            </span>
-        </header>
-    </section>
+        </div>
+    </header>
 
-    <!-- mijn profiel -->
+    <!-- Projects -->
 
-    <section>
-        <div id="mijn_profiel" class="section-container">
-            <h2 class="section-title">About Me</h2>
-            <div>
-                <div class="left1">
-                    <img src="/assets/images/testimage.png">
+    <section class="section">
+        <div class="section-container" id="section-projects">
+            <h2 class="section-title animation">Projects</h2>
+            <div class="projects-container">
+                <div class="projects">
+                    <div class="random animation" id="stats-left">
+                        <div class="column-inner">
+                            <a href="https://github.com/Luciousdev/RePad" target="_blank">
+                                <img src="./assets/video-pic-gif/RePad.webp" class="projects-img" alt="image" id="ranks-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="random animation" id="stats-right">
+                        <div class="column-inner">
+                            <h1>RePad</h1>
+                            <p>RePad is a simple notepad application that I made to start learning c#. It has a simplistic/minimalistic look and is sort of based of notepad. (I most likely won't be updating this since it was just a learning project for me.</p>
+                            <a href="https://github.com/Luciousdev/RePad/releases" target="_blank"><b>Download</b></a>
+                            <p></p>
+                        </div>
+                    </div>
                 </div>
-                <div class="right1">
-                    <p>My name is Lucy, I'm a trans female studying software development. I live in the Netherlands and love to code, play games and hang out with others.</p>
+                <div class="projects">
+                    <div class="random animation" id="discord-left">
+                        <div class="column-inner">
+                            <a href="https://github.com/Luciousdev/lucious.dev" target="_blank">
+                                <img src="./assets/video-pic-gif/GitHub-Mark-Light-120px-plus.png" class="projects-img" alt="image" id="discord-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="random animation" id="discord-right">
+                        <div class="column-inner">
+                            <h1>Website source code</h1>
+                            <p>On this github page will be the source code of the website. As of right now it's still private but I will open it up later.</p>
+                            <a href="https://github.com/Luciousdev/Luciousdev.nl" target="_blank"><b>Source code (github)</b></a>
+                            <p></p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <h2 class="seperation"></h2>
         </div>
     </section>
 
-    <!-- over mij -->
+    <!-- About me -->
 
-    <section>
-        <div id="over_mij" class="section-container">
-            <h2 class="section-title">Projects</h2>
-            <p class="section-tekst">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eaque nobis pariatur, magnam magni consequatur provident ab necessitatibus quam libero assumenda fugit similique quas dolore, esse exercitationem nulla qui nemo!</p>
-            <p class="section-tekst0padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aut optio dolorem magni mollitia sit illo fugiat beatae dolorum omnis modi, corrupti voluptate labore nobis, aperiam minus odit, dolores quia!</p>
-
+    <section class="section">
+        <div class="section-container" id="section-aboutme">
+            <h2 class="section-title animation" id="section-aboutme">About Me</h2>
+            <div class="github animation">
+                <p>My name is Lucy I'm a trans female software/web developer from the small country called Netherland. I have been <br> coding for around 2-3 years and I'm trying to get better at it every day.
+            </div>
         </div>
     </section>
 
-    <!-- motivatie -->
+    <!-- Twitch -->
 
-    <section>
-        <div id="motivatie" class="section-container">
-            <h2 class="section-title">TITLE</h2>
-            <p class="section-tekst">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel minima quis dolorum nostrum ad tenetur molestiae maxime atque ducimus numquam, asperiores quae incidunt, eveniet, nam nulla odio ipsa eaque quas.</p>
-            <p class="section-tekst0padding">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error quos fugit beatae amet ipsum sapiente incidunt quaerat praesentium laborum necessitatibus dolores libero rerum unde, aperiam a eius quis nobis animi!</p>
+    <section class="section">
+        <div class="color1 section-container" id="section-twitch">
+            <h2 class="section-title animation" id="section-aboutme">Twitch</h2>
+            <div class="github animation">
+                <p>You can watch my streams either on here or on <a href="https://www.twitch.tv/lucy_sweets" target="blank_">twitch</a>!</p>
+            </div>
+            <iframe class="twitch twitch animation" src="https://player.twitch.tv/?channel=lucy_sweets&parent=www.luciousdev.n;" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
         </div>
     </section>
 
-    <!-- overig -->
+    <!-- Socials -->
 
-    <section>
-        <div id="overig" class="section-container">
-            <h2 class="section-title">Banned</h2>
-            <p class="section-tekst extra_padding">Because of my gender and sexual orientation I'm "banned" in the countries that you can see in this map. This is something that NEEDS to change, I hope that the world will be a better place.</p>
-            <iframe class="verboden_kaart" width="80%" height="500px" src="https://www.humandignitytrust.org/lgbt-the-law/map-of-criminalisation/?type_filter_submitted=&type_filter%5B%5D=crim_lgbt&embed=true" frameborder="0"></iframe>
+    <section class="section">
+        <div class="section-container" id="section-social">
+            <h2 class="section-title animation" id="title-social">Socials</h2>
+            <div class="social">
+                <div class="social-container animation">
+                    <div id="social-avatar">
+                        <div id="avatar"></div>
+                    </div>
+                    <div class="social-sep"></div>
+                    <div id="social-center">
+                        <div class="social-item" id="social-twitter">
+                            <img class="social-logo" id="logo-twitter" src="./assets/video-pic-gif/twitter.png">
+                            <a href="https://twitter.com/Luciousss01" target="_blank" class="social-link">@Luciousss01</a>
+                        </div>
+                        <div class="social-item" id="social-youtube">
+                            <img class="social-logo" id="logo-youtube" src="./assets/video-pic-gif/youtube.png">
+                            <a href="https://www.youtube.com/channel/UCfXG6v_2FtasXlGk_FftjkQ" target="_blank" class="social-link">Lucious</a>
+                        </div>
+                        <div class="social-item" id="social-twitch">
+                            <img class="social-logo" id="logo-twitch" src="./assets/video-pic-gif/twitch.png">
+                            <a href="https://www.twitch.tv/lucy_sweets" target="_blank" class="social-link">lucy_sweets</a>
+                        </div>
+                        <div class="social-item" id="social-discord">
+                            <img class="social-logo" id="logo-discord" src="./assets/video-pic-gif/discord.png">
+                            <a href="https://discord.com/users/524229083014365194" target="_blank" class="social-link">Lucious.#0001</a>
+                        </div>
+                        <div class="social-item" id="social-discord">
+                            <img class="social-logo" id="logo-discord" src="./assets/video-pic-gif/discord.png">
+                            <a href="https://discord.gg/ejGX2u36aW" target="_blank" class="social-link">Discord Server</a>
+                        </div>
+                        <div class="social-item" id="social-steam">
+                            <img class="social-logo" id="logo-steam" src="./assets/video-pic-gif/steam.png">
+                            <a href="https://steamcommunity.com/id/lucious01/" target="_blank" class="social-link">Steam Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- snow -->
 
-    <!--FIX Footer -->
-
-    <section>
-        <div class="footer">
+    <style>
+        /* customizable snowflake styling */
+        
+        .snowflake {
+            color: #fff;
+            font-size: 1em;
+            font-family: Arial, sans-serif;
+            text-shadow: 0 0 5px #000;
+        }
+        
+        @-webkit-keyframes snowflakes-fall {
+            0% {
+                top: -10%
+            }
+            100% {
+                top: 100%
+            }
+        }
+        
+        @-webkit-keyframes snowflakes-shake {
+            0%,
+            100% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0)
+            }
+            50% {
+                -webkit-transform: translateX(80px);
+                transform: translateX(80px)
+            }
+        }
+        
+        @keyframes snowflakes-fall {
+            0% {
+                top: -10%
+            }
+            100% {
+                top: 100%
+            }
+        }
+        
+        @keyframes snowflakes-shake {
+            0%,
+            100% {
+                transform: translateX(0)
+            }
+            50% {
+                transform: translateX(80px)
+            }
+        }
+        
+        .snowflake {
+            position: fixed;
+            top: -10%;
+            z-index: 9999;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: default;
+            -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+            -webkit-animation-duration: 10s, 3s;
+            -webkit-animation-timing-function: linear, ease-in-out;
+            -webkit-animation-iteration-count: infinite, infinite;
+            -webkit-animation-play-state: running, running;
+            animation-name: snowflakes-fall, snowflakes-shake;
+            animation-duration: 10s, 3s;
+            animation-timing-function: linear, ease-in-out;
+            animation-iteration-count: infinite, infinite;
+            animation-play-state: running, running
+        }
+        
+        .snowflake:nth-of-type(0) {
+            left: 1%;
+            -webkit-animation-delay: 0s, 0s;
+            animation-delay: 0s, 0s
+        }
+        
+        .snowflake:nth-of-type(1) {
+            left: 10%;
+            -webkit-animation-delay: 1s, 1s;
+            animation-delay: 1s, 1s
+        }
+        
+        .snowflake:nth-of-type(2) {
+            left: 20%;
+            -webkit-animation-delay: 6s, .5s;
+            animation-delay: 6s, .5s
+        }
+        
+        .snowflake:nth-of-type(3) {
+            left: 30%;
+            -webkit-animation-delay: 4s, 2s;
+            animation-delay: 4s, 2s
+        }
+        
+        .snowflake:nth-of-type(4) {
+            left: 40%;
+            -webkit-animation-delay: 2s, 2s;
+            animation-delay: 2s, 2s
+        }
+        
+        .snowflake:nth-of-type(5) {
+            left: 50%;
+            -webkit-animation-delay: 8s, 3s;
+            animation-delay: 8s, 3s
+        }
+        
+        .snowflake:nth-of-type(6) {
+            left: 60%;
+            -webkit-animation-delay: 6s, 2s;
+            animation-delay: 6s, 2s
+        }
+        
+        .snowflake:nth-of-type(7) {
+            left: 70%;
+            -webkit-animation-delay: 2.5s, 1s;
+            animation-delay: 2.5s, 1s
+        }
+        
+        .snowflake:nth-of-type(8) {
+            left: 80%;
+            -webkit-animation-delay: 1s, 0s;
+            animation-delay: 1s, 0s
+        }
+        
+        .snowflake:nth-of-type(9) {
+            left: 90%;
+            -webkit-animation-delay: 3s, 1.5s;
+            animation-delay: 3s, 1.5s
+        }
+        
+        .snowflake:nth-of-type(10) {
+            left: 25%;
+            -webkit-animation-delay: 2s, 0s;
+            animation-delay: 2s, 0s
+        }
+        
+        .snowflake:nth-of-type(11) {
+            left: 65%;
+            -webkit-animation-delay: 4s, 2.5s;
+            animation-delay: 4s, 2.5s
+        }
+    </style>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+            ❅
         </div>
-    </section>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+    </div>
 </body>
 
 </html>

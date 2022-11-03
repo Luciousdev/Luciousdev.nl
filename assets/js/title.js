@@ -7,9 +7,6 @@ window.onfocus = function() {
 }
 
 
-//FIX het is momenteel meer hoe vaak je zelf op de website bent geweest en niet hoevaak het is bezocht... 
-//Finally hooked up an API to it (25/10/2022)
-
 
 const countEl = document.getElementById('count');
 
