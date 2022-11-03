@@ -1,4 +1,4 @@
-const boxes = document.querySelectorAll(".section");
+const boxes = document.querySelectorAll(".animation");
 
 window.addEventListener("scroll", checkBoxes);
 
