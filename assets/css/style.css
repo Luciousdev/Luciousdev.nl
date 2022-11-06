@@ -409,10 +409,10 @@ main-menu p:before {
     aspect-ratio: 16 / 9;
 }
 
-.color1 a {
+.color2 a {
     color: #525252
 }
 
-.color1 a:hover {
+.color2 a:hover {
     color: rgb(170, 170, 170)
 }
