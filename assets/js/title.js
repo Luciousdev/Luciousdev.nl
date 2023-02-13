@@ -1,9 +1,9 @@
 window.onblur = function() {
-    document.title = 'I <3 you | Lucy Puyenbroek';
+    document.title = 'I <3 you | Lucy Gwen Puyenbroek';
 }
 
 window.onfocus = function() {
-    document.title = 'Lucy Puyenbroek';
+    document.title = 'Lucy Gwen Puyenbroek';
 }
 
 
